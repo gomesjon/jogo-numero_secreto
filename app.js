@@ -15,14 +15,15 @@ function exibirMensagemNaTela(tag, texto) {
 // as linhas abaixo servem para fazer uma narrativa da parte escrita do site, o código comentado 
 //não funciona em alguns navegadores    
     // responsiveVoice.speak(texto, "Brazilian Portuguese Female", {rate: 1.2});
-    if ('speechSynthesis' in window) {
-        let utterance = new SpeechSynthesisUtterance(texto);
-        utterance.lang = 'pt-BR'; 
-        utterance.rate = 1.2; 
-        window.speechSynthesis.speak(utterance); 
-    } else {
-        console.log("Web Speech API não suportada neste navegador.");
-    }
+//desativei por um tempo as narrativas
+    // if ('speechSynthesis' in window) {
+    //     let utterance = new SpeechSynthesisUtterance(texto);
+    //     utterance.lang = 'pt-BR'; 
+    //     utterance.rate = 1.2; 
+    //     window.speechSynthesis.speak(utterance); 
+    // } else {
+    //     console.log("Web Speech API não suportada neste navegador.");
+    // }
 }
 
 function exibirMensagemInicial() {
